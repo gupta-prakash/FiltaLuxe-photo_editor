@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imageCard{
+    max-width: 22em;
+    height: 22em;
+    margin: auto;
+}
+
+.optionIconsContainer{
+    /* border: 2px solid green; */
+    display: inline-block;
+    position: relative;
+    top: 31px;
+    left: 7em;
+    z-index: 1;
+}
+
+.optionIcon{
+    margin: 0 5px;
+    color: #924e4e;
+}
+
+.optionIcon:hover{
+    color: #be5d5d;
+}
+
+.savedImage{
+    height: 100%;
+    width: 100%;
+}

@@ -1,0 +1,94 @@
+.App {
+  text-align: center;
+}
+
+.edit_section_container{
+  display: flex;
+}
+
+.image_section{
+  width: 100%;
+    padding: 23px 0;
+    background-color: #f1f1f1;
+}
+
+.image_section label{
+  position: fixed;
+    color: #bd4949;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.image_section label:hover{
+  cursor: pointer;
+  color: #da2a2a;
+}
+
+input[type=file]{
+  display: none;
+}
+
+.icon{
+  position: fixed;
+    z-index: 1;
+    font-size: 20px;
+    margin: 0px 4px;
+    padding: 8px 6px;
+    color: white;
+    background: black;
+}
+
+.close_icon{
+  top: 8.4em;
+  left: 69.15em;
+  font-size: 18.1px;
+}
+
+.save_icon{
+  top: 9.2em;
+    left: 62.6em;
+}
+
+.close_icon:hover{
+  border-top-right-radius: 10px;
+}
+
+.save_icon:hover{
+  border-bottom-right-radius: 10px;
+}
+
+.icon:hover{
+  cursor: pointer;
+  color: #eae8e8;
+}
+
+.image_section img{
+  /* border: 2px solid red; */
+  height: 36em;
+    width: 34em;
+    margin: 3em -13em 0;
+    position: fixed;
+}
+
+.ImageCardContainer{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+  padding-bottom: 45px;
+  text-align: center;
+}
+
+@media screen and (max-width:636px) {
+  .image_section img{
+      height: 20em;
+      width: 18em;
+      margin: 3em -9em 0;
+  }   
+ }
+@media screen and (min-width:636px) and (max-width:1126px) {
+  .image_section img{
+      height: 28em;
+      width: 24em;
+  }   
+ }
