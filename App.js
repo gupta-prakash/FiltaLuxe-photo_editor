@@ -198,7 +198,7 @@ function App() {
     setImagetoedit( saveImage);
     setToSaveImageData([
       {
-        id: savedImagesData.length,
+        id: Math.floor((Math.random() * 10) + 1)+Math.floor((Math.random() * 10) + 1)+Math.floor((Math.random() * 10) + 1)+savedImagesData.length,
         image: saveImage,
         blurr: 0,
         brightness: 100,
