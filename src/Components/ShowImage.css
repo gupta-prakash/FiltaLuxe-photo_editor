@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.editedImage{
+    height: 38em;
+    width: 30em;
+    margin: 20px;
+    /* border: 16px solid #a19090; */
+    border-radius: 15px;
+}
+
+.back_arrow{
+    position: absolute;
+    top: 3em;
+    left: 1em;
+    font-size: 27px;
+}
+
+.back_arrow:hover{
+    cursor: pointer;
+    color: rgb(56, 45, 45);
+}
+
+@media screen and (max-width:730px) {
+    .editedImage{
+        height: 27em;
+        width: 16em;
+    }   
+   }

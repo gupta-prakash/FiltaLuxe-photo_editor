@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.editItem{
+    width: 20em;
+    /* border: 2px solid green; */
+    background-color: #202021;
+    padding: 4px 3px 14px;
+    /* background-color: blue; */
+    border-bottom: 1px solid #2e2c2c;
+}
+
+.editOption p{
+    display: inline-block;
+    color: #e2dddd;
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin: 7px 0;
+}
+
+.editOption p:hover{
+    cursor: pointer;
+    color: #eae7e7;
+}
+
+.filter_img{
+    height: 4em;
+    width: 4em;
+    border-radius: 2em;
+    margin: 4px 8px;
+    border: 2px solid #613131;
+    cursor: pointer;
+}
+
+.filter1{
+    filter : brightness(117%) contrast(120%) grayscale(100%);
+}
+.filter2{
+    filter: brightness(106%) contrast(127%) saturate(125%);
+}
+.filter3{
+    filter: brightness(95%) contrast(70%) sepia(39%);
+}
+.filter4{
+    filter: contrast(115%) hue-rotate(35deg);
+}
+.filter5{
+    filter: brightness(125%) opacity(79%) saturate(111%);
+}
+.filter6{
+    filter: grayscale(76%) hue-rotate(278deg) saturate(0%) sepia(80%);
+}
+.filter7{
+    filter: brightness(117%) contrast(121%) saturate(128%);
+}
+.filter8{
+    filter: brightness(121%) contrast(125) invert(18%);
+}
+
+.rangeVal{
+    display: table-cell;
+    color: #f60606;
+    border: 1px solid #a09595;
+    width: 40px;
+    border-radius: 23px;
+    padding: 7px 0px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(127 116 116 / 36%);
+    position: relative;
+}
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 58%;
+    height: 2px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+.slider:hover{
+    opacity: 1;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 13px;
+    background: #f60606;
+    cursor: grab;
+    border-radius: 3px;
+}
+.slider::-moz-range-thumb{
+    width: 8px;
+    height: 13px;
+    background:#f60606;
+    cursor: grab;
+    border-radius: 3px;
+}
+
+@media screen and (max-width:494px) {
+    .editItem{
+        width: 10em;
+    }
+    .rangeVal{
+        display: none;
+    }   
+}
+@media screen and (min-width:494px) and (max-width:756px) {
+    .rangeVal{
+        display: none;
+    }
+    .editItem{
+        width: 12em;
+    }   
+}
